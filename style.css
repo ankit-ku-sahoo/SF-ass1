@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+    padding: 0%;
+}
+
+.categories{
+    background-color: rgba(255, 99, 71, 0.500);
+    position: absolute;
+    width:100%;
+    height:30px;
+    margin-top: 30px;
+    border-radius: 50px;
+    padding-top: 12px;
+    text-align: right;
+    font-size: 1em;
+    z-index: 9;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+.categories-tab{
+    padding-right: 20px;
+    padding-left: 15px;
+}
+
+.tab:link,
+.tab:visited{
+    margin-top: 100px;
+    text-decoration: none;
+    color: black;
+    background-color: wheat;
+    padding: 6px 7.5px;
+    border-radius: 300px;
+    z-index: 9;
+}
+
+.tab:hover{
+    transform: translateY(-10px);
+}
+
+.tab:active{
+    transform: translateY(-5px);
+}
+
+#intro{
+    height: 100vh;
+    width: 100%;
+/*    padding: 1.56vw 1.56vw 7vw 1.56vw;*/
+    color: whitesmoke;
+    font-weight: 500;
+    text-align: left;
+    position: relative;
+    z-index: -2;
+    float: left;
+}
+
+.title{
+    color: #000;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-style: double;
+    padding: 8px;
+    background-color: rgba(255, 248, 220, 0.500);
+    box-shadow: black;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.photo{
+    margin-top: 130px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    border: solid;
+    width: 200px;
+    animation: enlarge 2s;
+    box-shadow: black;
+}
+
+.name{
+    text-align: center; 
+    font-size: 2em;
+    font: 400 70px/1.0 'Arizonia', Helvetica, sans-serif;
+    animation: moveinright 2s;
+    animation-fill-mode: both;
+}
+
+.details{
+    font-size: 1.2em; 
+    text-align: center;
+    font: 400 1.5em 'Arizonia', Helvetica, sans-serif;
+    animation: moveinleft 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes moveinleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80%{
+        transform: translate(5px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveinright{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80%{
+        transform: translate(-5px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes enlarge{
+    0%{
+        opacity: 0;
+        transform:translateX(-50%) scale(0);
+    }
+
+    80%{
+        opacity: 80;
+        transform:translateX(-50%) scale(1.05);
+    }
+
+    100%{
+        opacity: 100;
+        transform:translateX(-50%) scale(1);
+    }
+}
+
+#contactme{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right,rgba(255, 166, 0, 0.301), rgba(255, 99, 71, 0.301)), url(images/bright-butterfly-close-up-color-263559.jpg);
+    background-size: cover;
+    background-position: left;
+/*    padding: 1.56vw 1.56vw 7vw 1.56vw;*/
+    color: whitesmoke;
+    font-weight: 500;
+    text-align: left;
+    position: relative;
+    border-right-style: solid;
+    z-index: -2;
+    float: left;
+}
+
+.icons{
+    width: 50px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 200px;
+}
+
+.achievements{
+    text-align: center;
+    font: 400 2em 'Cookie', Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+}
+
+.aboutme{
+    font: 400 100px/1.5 'Pacifico', Helvetica, sans-serif;
+    color: wheat;
+    margin: 110px 0 0 50px;
+    font-size: 1.5em;
+}
+
+#intro-achievements{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/achievement-confident-free-freedom-6945.jpg);
+    background-size: cover;
+    background-position: left;
+/*    padding: 1.56vw 1.56vw 7vw 1.56vw;*/
+    color: whitesmoke;
+    font-weight: 500;
+    text-align: left;
+    position: relative;
+    border-right-style: solid;
+    z-index: -2;
+    float: left;
+}
